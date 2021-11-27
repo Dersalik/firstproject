@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle,White,grey);
+}
+
+#container{
+    height: 400px;
+    width: 500px;
+    background-color: cornflowerblue;
+    margin: 100px auto;
+     padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px darkgray;
+    position: relative;
+
+
+}
+
+
+
+
+#score{
+    background-color: darkolivegreen;
+    color:darkred;
+    padding: 10px;
+    position: absolute;
+    left: 450px;
+    box-shadow: 0px 4px aqua;
+
+}
+
+#correct
+{
+    position: absolute;
+    left: 260px;
+    background-color: forestgreen;
+    color: ghostwhite;
+    padding: 11px;
+    display: none;
+
+}
+
+#wrong
+{
+    position: absolute;
+    left: 100px;
+    background-color: rgb(26, 77, 143);
+    color: ghostwhite;
+    padding: 11px;
+    display: none;
+
+}
+
+#question{
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: rgb(80, 74, 41);
+    box-shadow: 0px 4px peru;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color: black;
+
+}
+
+#instruction
+{
+    width: 450px;
+    height: 50px;
+    background-color: chocolate;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px purple;
+
+}
+
+#choices{
+    height: 100px;
+    width: 450px;
+    
+    margin: 5px auto;
+}
+
+.box{
+    height: 85px;
+    width: 85px;
+    background-color: rgb(241, 241, 241);
+    float: left;
+    color: rgb(7, 8, 8);
+    margin-right: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0.2);
+    text-align: center;
+    line-height: 5;
+    position: relative;
+    transition: all 0.2s;
+
+
+}
+
+.box:hover, #startreset:hover{
+    background-color: seagreen;
+    color: rgb(77, 66, 66);
+    box-shadow: 0px 4px goldenrod;
+}
+
+
+
+#box4{
+    margin-right: 0;
+    color: rgb(1, 1, 2);
+}
+
+
+.box:active, #startreset:active{
+    box-shadow: 0px 0px goldenrod;
+    top: 4px;
+
+}
+
+
+#startreset{
+   
+    width: 85px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255,0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#timeremaining{
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 395px;
+    left: 370px;
+    background-color: green;
+    border-radius: 4px;
+    box-shadow: 0px 4px black;
+    display: none;
+    
+}
+
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(red,blue);
+    color: rgb(14, 10, 10);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+
+
+
+
+}
